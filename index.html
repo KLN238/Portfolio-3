@@ -1,113 +1,43 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Kilian</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="sidebar">
-        <h2>Mon Portfolio</h2>
-        <a href="#bienvenuesurmonportfolio" class="active">Accueil</a>
-        <a href="#Mon Profil">Mon Profil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact">Contact</a>
-    </div>
+<!DOCTYPE html>  
+<html lang="fr">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Accueil - Portfolio de Kilian</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <div class="wrapper">  
+        <!-- Sidebar -->  
+        <div class="sidebar">  
+            <div id="clock" class="clock"></div> <!-- Horloge en haut -->  
+            <h2>Mon Portfolio</h2>  
+            <nav>  
+                <a href="index.html" class="nav-link active">Accueil</a>  
+                <a href="profil.html" class="nav-link">Mon Profil</a>  
+                <a href="apropos.html" class="nav-link">À propos</a>  
+                <a href="epreuveE4.html" class="nav-link">Épreuve E4</a>  
+                <a href="epreuveE5.html" class="nav-link">Épreuve E5</a>  
+                <a href="projets.html" class="nav-link">Projets</a>  
+                <a href="veille.html" class="nav-link">Veille Technologique</a>  
+                <a href="contact.html" class="nav-link">Contact</a>  
+            </nav>  
+        </div>  
 
-    <div class="container">
-        <div class="main-content">
-            <section id="bienvenuesurmonportfolio" class="animatable"></section>
-            <h1>Bienvenue sur mon PortFolio</h1>
-            <p>Je m'appelle Kilian FURTADO FERNANDES, étudiant en BTS SIO option SISR, passionné par le développement et les technologies.</p>
-            
-            <div class="cv-section">                
-                <!-- Lien pour télécharger et ouvrir dans une nouvelle fenêtre -->
-                <button class="cv-button" onclick="window.open('cv-kilian-furtado-fernandes.pdf', '_blank')">Voir mon CV</button>
-            </div>
-            <section id="Mon Profil" class="animatable">
-                <div class="Mon Profil">
-            <h2>Mon Profil</h2>
-                    <p>Bonjour, je suis Kilian !<p>
+        <!-- Contenu principal -->  
+        <div class="content">  
+            <section id="accueil" class="section">  
+                <h1>Bienvenue sur mon Portfolio</h1>  
+                <p>Je m'appelle Kilian Furtado Fernandes, étudiant en BTS Services Informatiques aux Organisations (SIO), option Solutions d'Infrastructure, Systèmes et Réseaux (SISR). Passionné par le développement et les technologies, je vous invite à découvrir mes compétences, projets et expériences à travers ce portfolio.</p>  
+        
+                <div class="cv-section">  
+                    <hr>  
+                    <button class="cv-button" onclick="window.open('cv-kilian-furtado-fernandes.pdf', '_blank')">Voir mon CV</button>  
+                </div>  
+            </section>  
+        </div>  
+    </div>  
 
-                     Passionné par la technologie et l'informatique, je suis un véritable curieux toujours à la recherche de nouvelles façons d'optimiser et de personnaliser mes configurations. Actuellement, je prépare un BTS SIO (Services Informatiques aux Organisations) avec une spécialisation SISR (Solutions d'Infrastructure Systèmes et Réseaux), un domaine qui me passionne particulièrement.
-                        
-                       </p> Mon parcours m'a amené à travailler sur plusieurs projets de gestion de systèmes, d'administration réseau, et de virtualisation. J'aime explorer les dernières innovations matérielles, que ce soit pour les PC gaming, les consoles de jeux, ou les appareils multimédia. Mon but est toujours de repousser les limites et d'optimiser chaque composant pour offrir la meilleure expérience possible, que ce soit pour le jeu ou le travail.
-                </div>
-            </section>
-            
-            
-            
-            <section id="apropos" class="animatable">
-                <h2>À propos</h2>
-                <p>
-                    Le BTS SIO (Services Informatiques aux Organisations) est une formation de deux ans qui prépare les étudiants à devenir des professionnels dans le domaine de l'informatique et des systèmes d'information. Ce diplôme est particulièrement adapté à ceux qui souhaitent acquérir des compétences solides en développement, gestion de projets informatiques et administration des systèmes et réseaux.
-                </p>
-                <p>
-                    Le BTS SIO propose deux spécialisations :
-                </p>
-                <ul>
-                    <li>
-                        <strong>SISR (Solutions d'Infrastructure, Systèmes et Réseaux) :</strong> Cette spécialisation se concentre sur l'administration des systèmes, des réseaux et des infrastructures informatiques. Les étudiants apprennent à gérer et à sécuriser les réseaux, à installer et maintenir des serveurs, ainsi qu'à assurer le bon fonctionnement des systèmes informatiques au sein des entreprises.
-                    </li>
-                    <li>
-                        <strong>SLAM (Solutions Logicielles et Applications Métiers) :</strong> Cette spécialisation met l'accent sur le développement d'applications informatiques. Les étudiants apprennent à créer, déployer et maintenir des logiciels adaptés aux besoins spécifiques des entreprises, tout en maîtrisant les langages de programmation et les bases de données.
-                    </li>
-                </ul>
-                <p>
-                    Au-delà des compétences techniques, le BTS SIO permet également de développer des capacités en gestion de projets, en communication et en travail d’équipe. Ce diplôme offre de nombreuses opportunités professionnelles dans divers secteurs, notamment la gestion de réseaux, la maintenance informatique, le développement d'applications ou encore l’assistance aux utilisateurs.
-                </p>
-            </section>
-            
-            <section id="competences" class="animatable">
-                <h2>Compétences</h2>
-                <ul>
-                    <li><strong>Langages :</strong> Python, Java, PHP, SQL.</li>
-                    <li><strong>Outils :</strong> Docker, Ivanti, Jamf Pro, VS Code, Virtual BOX</li>
-                </ul>
-            </section>
-
-            <section id="projets" class="animatable">
-                <h2>Projets</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Application de gestion de bibliothèque</h3>
-                        <p>Création d'une application web pour gérer les emprunts de livres.</p>
-                        <p><strong>Technologies :</strong> PHP, MySQL, Bootstrap</p>
-                        <a href="#">Voir sur GitHub</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Site e-commerce</h3>
-                        <p>Développement d'un site e-commerce avec un système de gestion des produits et un panier.</p>
-                        <p><strong>Technologies :</strong> Laravel, Vue.js, Stripe API</p>
-                        <a href="#">Voir sur GitHub</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Outil d'administration réseau</h3>
-                        <p>Un outil conçu pour simplifier la gestion des configurations réseau.</p>
-                        <p><strong>Technologies :</strong> Python, Flask, SQLAlchemy</p>
-                        <a href="#">Voir sur GitHub</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="animatable">
-                <h2>Contact</h2>
-                <p><strong>Email :</strong> <a href="mailto:Kilian918@icloud.com">Kilian918@icloud.com</a></p>
-                <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/kilian-furtado-fernandes-1290a226a" target="_blank">Mon profil LinkedIn</a></p>
-                <p><strong>Téléphone :</strong> 07 65 76 27 31</p>
-                <p><strong>Localisation :</strong> Nangis 77370 Ile-De-France</p>
-            </section>
-        </div>
-
-        <footer>
-            &copy; 2025 Kilian. Tous droits réservés.
-        </footer>
-    </div>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script> <!-- Script pour gérer l'horloge -->  
+</body>  
 </html>
