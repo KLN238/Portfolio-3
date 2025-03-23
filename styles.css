@@ -37,7 +37,7 @@ body {
 
 .sidebar h2 {
     color: #ff2e63;
-    font-size: 2.2em;
+    font-size: 1.8em; /* Réduit depuis 2.2em */
     margin-bottom: 25px;
 }
 
@@ -54,7 +54,7 @@ body {
     text-decoration: none;
     padding: 15px;
     width: 95%;
-    font-size: 1.2em;
+    font-size: 1em; /* Réduit depuis 1.2em */
     text-align: center;
     border-radius: 5px;
     transition: background 0.3s, transform 0.2s;
@@ -101,13 +101,13 @@ body {
 /* ========================= */
 h1 {
     color: #e01e4f;
-    font-size: 4em; /* Plus grand */
+    font-size: 2.5em; /* Réduit depuis 4em */
     font-weight: bold;
 }
 
 h2 {
     color: #ff2e63;
-    font-size: 2.5em;
+    font-size: 2em; /* Réduit depuis 2.5em */
     margin-bottom: 30px;
 }
 
@@ -115,7 +115,7 @@ h2 {
 /* 🕒 Horloge */
 /* ========================= */
 .clock {
-    font-size: 3em; /* Agrandie */
+    font-size: 2em; /* Réduit depuis 3em */
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
@@ -126,10 +126,10 @@ h2 {
 }
 
 /* ========================= */
-/* 📌 Section Profil (Taille inchangée) */
+/* 📌 Section Profil */
 /* ========================= */
 .profil-text p {
-    font-size: 18px;
+    font-size: 16px; /* Réduit depuis 18px */
     color: #dcdcdc;
     line-height: 1.6;
     text-align: justify;
@@ -158,12 +158,12 @@ h2 {
 }
 
 .timeline-content h3 {
-    font-size: 22px;
+    font-size: 18px; /* Réduit depuis 22px */
     color: #ff2e63;
 }
 
 .timeline-content p {
-    font-size: 18px;
+    font-size: 16px; /* Réduit depuis 18px */
     color: #dcdcdc;
 }
 
@@ -195,12 +195,12 @@ h2 {
 }
 
 .project-card h2 {
-    font-size: 1.4em;
+    font-size: 1.2em; /* Réduit depuis 1.4em */
     margin-bottom: 12px;
 }
 
 .project-card p {
-    font-size: 1em;
+    font-size: 0.9em; /* Réduit depuis 1em */
     color: #dcdcdc;
 }
 
@@ -217,7 +217,7 @@ h2 {
 }
 
 .cv-section h2 {
-    font-size: 2.5em;
+    font-size: 2em; /* Réduit depuis 2.5em */
     font-weight: bold;
     color: #ff2e63;
     margin-bottom: 30px;
@@ -229,7 +229,7 @@ h2 {
     justify-content: center;
     gap: 12px;
     padding: 16px 32px;
-    font-size: 1.4em;
+    font-size: 1.2em; /* Réduit depuis 1.4em */
     font-weight: bold;
     color: white;
     background: linear-gradient(45deg, #ff2e63, #e01e4f);
@@ -242,7 +242,7 @@ h2 {
 }
 
 .cv-button i {
-    font-size: 1.4em;
+    font-size: 1.2em; /* Réduit depuis 1.4em */
 }
 
 .cv-button:hover {
@@ -254,196 +254,7 @@ h2 {
 .cv-button:active {
     transform: scale(0.98);
 }
-/* Reset de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
 
-body {
-    background-color: #0f0f1a;
-    color: #fff;
-    display: flex;
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
-}
-
-/* --- Barre latérale --- */
-.sidebar {
-    width: 250px;
-    background-color: #111;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow-y: auto;
-}
-
-.sidebar h2 {
-    color: #e60073;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.nav-link {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.nav-link:hover, .nav-link.active {
-    background-color: #e60073;
-    border-radius: 5px;
-}
-
-/* --- Contenu principal --- */
-.content {
-    margin-left: 260px;
-    width: calc(100% - 260px);
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* --- Section Contact --- */
-.contact-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #e60073;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.contact-subtitle {
-    font-size: 1.8rem;
-    text-align: center;
-    color: #ff4081;
-    margin-bottom: 40px;
-}
-
-/* --- Conteneur du contact --- */
-.contact-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
-    max-width: 1000px;
-}
-
-/* --- Formulaire --- */
-.contact-container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 0, 100, 0.5);
-    width: 400px;
-    text-align: center;
-    position: relative;
-    top: -30px; /* Remonte le formulaire */
-}
-
-.contact-container h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.contact-table input,
-.contact-table textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #fff;
-}
-
-.contact-table textarea {
-    resize: none;
-    height: 100px;
-}
-
-.contact-table button {
-    width: 100%;
-    padding: 12px;
-    background-color: #e60073;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-table button:hover {
-    background-color: #ff4081;
-}
-
-/* --- Informations de contact --- */
-.contact-info {
-    text-align: center;
-    width: 350px;
-}
-
-.contact-info h3 {
-    color: #ff4081;
-    font-size: 1.4rem;
-    margin-top: 15px;
-}
-
-.contact-info p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-.contact-info a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.contact-info a:hover {
-    color: #ff4081;
-}
-
-/* --- Responsive --- */
-@media (max-width: 768px) {
-    .wrapper {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .content {
-        margin-left: 0;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .contact-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-container, .contact-info {
-        width: 90%;
-    }
-}
 /* ========================= */
 /* 🎯 Effet d'Apparition */
 /* ========================= */
@@ -496,7 +307,7 @@ body {
 /* 📜 Effet de Texte Machine à Écrire */
 /* ========================= */
 .typing-text {
-    font-size: 2.5em;
+    font-size: 2em; /* Réduit depuis 2.5em */
     font-weight: bold;
     color: #ff2e63;
     text-align: center;
@@ -515,58 +326,58 @@ body {
     transition: transform 0.2s ease-in-out;
 }
 
-/* Importer la police à choisir */  
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');  
+/* ========================= */
+/* 📋 Contact */
+/* ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Styles globaux */  
-body {  
-    background-color: #1c1c2a;  /* Couleur de fond */  
-    color: white;               /* Couleur du texte */  
-    font-family: 'Roboto', sans-serif; /* Changement de police */  
-    margin: 0;                  /* Supprimer les marges par défaut */  
-    display: flex;              /* Utiliser flex pour centrer le contenu */  
-    justify-content: center;     /* Centre le contenu horizontalement */  
-    align-items: flex-start;     /* Aligne le contenu en haut */  
-    height: 100vh;              /* Prendre toute la hauteur de l'écran */  
-    padding: 20px;              /* Espacement autour du contenu */  
-}  
-
-/* Section d'accueil */  
-.header {  
-    width: 100%;                /* Prendre toute la largeur disponible */  
-    padding: 20px 50px;        /* Espacement autour du contenu */  
-}  
-
-h1 {  
-    font-size: 3em;              /* Taille du titre */  
-    color: #e01e4f;              /* Couleur du titre principal */  
-}  
-
-h2 {  
-    font-size: 2em;              /* Taille du sous-titre */  
-    color: #ff2e63;              /* Couleur du sous-titre */  
-}  
-
-p {  
-    font-size: 1.5em;            /* Taille du texte */  
-    line-height: 1.6;            /* Hauteur de ligne pour faciliter la lecture */  
-    margin: 10px 0;              /* Espacement entre les éléments */  
-}  
-
-/* Style du bouton */  
-.button {  
-    margin-top: 20px;            /* Espacement au-dessus du bouton */  
-    padding: 10px 20px;          /* Espacement à l'intérieur du bouton */  
-    background-color: #ff2e63;   /* Couleur du bouton */  
-    color: white;                 /* Couleur du texte du bouton */  
-    border: none;                 /* Pas de bordure */  
-    border-radius: 5px;          /* Coins arrondis */  
-    cursor: pointer;              /* Curseur en forme de main */  
-}  
-
-.button:hover {  
-    background-color: #e01e4f;   /* Couleur du bouton au survol */  
+body {
+    background-color: #1c1c2a;  
+    color: white;              
+    font-family: 'Roboto', sans-serif;
+    margin: 0;                 
+    display: flex;             
+    justify-content: center;   
+    align-items: flex-start;   
+    height: 100vh;             
+    padding: 20px;             
 }
+
+.header {
+    width: 100%;               
+    padding: 20px 50px;        
+}
+
+h1 {
+    font-size: 2.2em; /* Réduit depuis 3em */
+    color: #e01e4f;            
+}
+
+h2 {
+    font-size: 1.6em; /* Réduit depuis 2em */
+    color: #ff2e63;            
+}
+
+p {
+    font-size: 1em;  /* Réduit depuis 1.5em */
+    line-height: 1.4; /* Légèrement resserré */
+    margin: 10px 0;            
+}
+
+.button {
+    margin-top: 20px;          
+    padding: 10px 20px;        
+    background-color: #ff2e63; 
+    color: white;              
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;           
+}
+
+.button:hover {
+    background-color: #e01e4f; 
+}
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -575,14 +386,15 @@ p {
     left: 0;
     z-index: -1; /* Pour être en arrière-plan */
 }
+
 .info-button {
     position: fixed;
-    bottom: 20px; /* Distance par rapport au bas */
-    right: 20px; /* Distance par rapport à la droite */
-    background-color: #E63946; /* Rouge vif */
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #E63946; 
     color: white;
     padding: 15px 20px;
-    font-size: 18px;
+    font-size: 16px; /* Réduit depuis 18px */
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -593,4 +405,249 @@ p {
 
 .info-button:hover {
     background-color: #D62839;
+}
+
+/* ========================= */
+/* === Barre latérale (2ème version collée) === */
+/* ========================= */
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #111;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    color: #e60073;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Pour rester cohérent avec la réduction globale */
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #e60073;
+    border-radius: 5px;
+}
+
+.content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement les éléments internes */
+}
+
+/* ========================= */
+/* === Section Contact === */
+/* ========================= */
+.contact-title {
+    font-size: 2rem; /* Réduit depuis 3rem */
+    font-weight: bold;
+    color: #e60073;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    font-size: 1.4rem; /* Réduit depuis 1.8rem */
+    text-align: center;
+    color: #ff4081;
+    margin-bottom: 40px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 100, 0.5);
+    width: 400px;
+    text-align: center;
+    position: relative;
+    top: -30px; 
+}
+
+.contact-container h2 {
+    font-size: 1.4rem; /* Réduit depuis 1.8rem */
+    margin-bottom: 20px;
+}
+
+.contact-table input,
+.contact-table textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Légèrement plus petit */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.contact-table textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-table button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e60073;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Réduit depuis 1.2rem */
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-table button:hover {
+    background-color: #ff4081;
+}
+
+.contact-info {
+    text-align: center;
+    width: 350px;
+}
+
+.contact-info h3 {
+    color: #ff4081;
+    font-size: 1.2rem; /* Réduit depuis 1.4rem */
+    margin-top: 15px;
+}
+
+.contact-info p {
+    font-size: 1rem; /* Réduit depuis 1.1rem */
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: #ff4081;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container, .contact-info {
+        width: 90%;
+    }
+}
+
+/* ========================= */
+/* ✨ AJOUT pour la section E6 et projets en bas */
+/* ========================= */
+.section-e6 {
+    text-align: center;    /* Centre tout le texte dans cette section */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-e6 .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;     /* Pour forcer une seule ligne (si tu veux wrap, remets wrap) */
+    gap: 25px;
+    margin-top: 20px;
+    overflow-x: auto;      /* Scroll horizontal si trop de projets */
+}
+h1 {
+    font-size: 3.0em; /* Avant : 2.5em */
+}
+
+h2 {
+    font-size: 2.4em; /* Avant : 2em */
+}
+
+p {
+    font-size: 1.2em; /* Avant : 1em */
+}
+
+.timeline-content h3 {
+    font-size: 1.7em; /* Avant : 1.1em ou 18px */
+}
+
+.timeline-content p {
+    font-size: 1.2em;
+}
+.project-card a {
+    color: #ff66c4		; /* Cyan clair, très lisible sur fond foncé */
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #ff2e63; /* Rose fluo au survol */
+}
+.fiche-button-container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.fiche-button {
+    background: linear-gradient(45deg, #ff2e63, #e01e4f);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 4px 10px rgba(255, 46, 99, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.fiche-button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #e01e4f, #ff2e63);
 }

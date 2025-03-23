@@ -1,64 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Épreuve E6 - Portfolio de Kilian</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Épreuve E6 - Portfolio de Kilian</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <div id="clock" class="clock"></div>
-            <h2>Mon Portfolio</h2>
-            <nav>
-                <a href="index.html" class="nav-link">Accueil</a>
-                <a href="profil.html" class="nav-link">Mon Profil</a>
-                <a href="apropos.html" class="nav-link">À propos</a>
-                <a href="epreuveE5.html" class="nav-link">Épreuve E5</a>
-                <a href="epreuveE6.html" class="nav-link active">Épreuve E6</a>
-                <a href="projets.html" class="nav-link">Projets</a>
-                <a href="veille.html" class="nav-link">Veille Technologique</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </nav>
-        </div>
-
-        <div class="content">
-            <section id="epreuve" class="section">
-                <h2>🔹 Épreuve E6 – Administration des systèmes et des réseaux</h2>
-                <p>
-                    L’épreuve E6 est une épreuve pratique de 4 heures qui évalue la capacité à administrer et sécuriser un système informatique, gérer un réseau et résoudre des problèmes techniques.
-                </p>
-                
-                <h3>📌 Détails</h3>
-                <p>
-                    Nom : Administration des systèmes et des réseaux<br>
-                    Coefficient : 4<br>
-                    Durée : 4 heures<br>
-                    Format : Épreuve pratique sur machine
-                </p>
-
-                <h3>🖥️ Déroulement</h3>
-                <p>
-                    Le candidat travaille dans un environnement simulé et réalise des tâches comme l’installation et la configuration de serveurs, la gestion d’Active Directory, la configuration des services réseau et la sécurisation des infrastructures.
-                </p>
-
-                <h3>🎯 Compétences évaluées</h3>
-                <p>
-                    Installation et configuration de serveurs, administration réseau, sécurisation, dépannage et documentation technique.
-                </p>
-
-                <h3>✅ Conseils</h3>
-                <p>
-                    S’entraîner sur VirtualBox, maîtriser les commandes essentielles, automatiser des tâches avec des scripts et bien documenter son travail.
-                </p>
-            </section>
-        </div>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div id="clock" class="clock"></div>
+      <h2>Mon Portfolio</h2>
+      <nav>
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="profil.html" class="nav-link">Mon Profil</a>
+        <a href="apropos.html" class="nav-link">À propos</a>
+        <a href="epreuveE5.html" class="nav-link">Épreuve E5</a>
+        <a href="epreuveE6.html" class="nav-link active">Épreuve E6</a>
+        <a href="projets.html" class="nav-link">Projets</a>
+        <a href="veille.html" class="nav-link">Veille Technologique</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
     </div>
-    <div id="particles-js"></div>
 
-    <script src="script.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/particles-config.js"></script>
+    <div class="content">
+      <!-- SECTION ÉPREUVE E6 -->
+      <section id="epreuve" class="section">
+        <h2>🔹 Épreuve E6 – Administration des systèmes et des réseaux</h2>
+        <p>
+          L’épreuve E6 est une épreuve pratique de 4 heures qui évalue la capacité à
+          administrer et sécuriser un système informatique, gérer un réseau et résoudre
+          des problèmes techniques.
+        </p>
+        <h3>📌 Détails</h3>
+        <p>
+          Nom : Administration des systèmes et des réseaux<br>
+          Coefficient : 4<br>
+          Durée : 4 heures<br>
+          Format : Épreuve pratique sur machine
+        </p>
+        <h3>🖥️ Déroulement</h3>
+        <p>
+          Le candidat travaille dans un environnement simulé et réalise des tâches comme
+          l’installation et la configuration de serveurs, la gestion d’Active Directory,
+          la configuration des services réseau et la sécurisation des infrastructures.
+        </p>
+        <h3>🎯 Compétences évaluées</h3>
+        <p>
+          Installation et configuration de serveurs, administration réseau, sécurisation,
+          dépannage et documentation technique.
+        </p>
+        <h3>✅ Conseils</h3>
+        <p>
+          S’entraîner sur VirtualBox, maîtriser les commandes essentielles, automatiser
+          des tâches avec des scripts et bien documenter son travail.
+        </p>
+
+        <!-- PROJETS EN BAS, DANS UN MÊME CONTENEUR -->
+        <div class="projects-container">
+          <div class="project-card">
+            <h2>Projet 1 - Outil d'administration réseau</h2>
+            <p>
+              Un outil permettant de simplifier la gestion des configurations réseau avec VirtualBox.
+            </p>
+            <a href="Fiche de réalisation administration réseau.pdf"
+               class="btn"
+               target="_blank">Voir la fiche situation</a>
+            <br>
+               <a href="Fiche de réalisation Gestion de tickets.pdf"
+               class="btn"
+               target="_blank">Voir la fiche documentation</a>
+          </div>
+
+          <div class="project-card">
+            <h2>Projet 2 - Application de gestion de tickets d'incident</h2>
+            <p>
+              Une application web développée avec Xampp et PHP pour la gestion des tickets d'incident.
+            </p>
+            <a href="Fiche de réalisation Gestion de tickets.pdf"
+               class="btn"
+               target="_blank">Voir la fiche situation</a>
+            <br>
+            <a href="Fiche de réalisation Gestion de tickets.pdf"
+               class="btn"
+               target="_blank">Voir la documentation</a>
+          </div>
+        </div>
+      </section>
+    </div> <!-- .content -->
+  </div> <!-- .wrapper -->
+
+  <div id="particles-js"></div>
+
+  <script src="script.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
 </body>
 </html>
