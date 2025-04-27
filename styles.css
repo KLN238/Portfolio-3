@@ -21,8 +21,11 @@ body {
 /* ========================= */
 /* 🎨 Barre latérale */
 /* ========================= */
+/* ========================= */
+/* 🎨 Barre latérale */
+/* ========================= */
 .sidebar {
-    width: 280px; /* Légèrement élargie */
+    width: clamp(240px, 18vw, 320px); /* 🔁 changé depuis 280px */
     background-color: #1a1a2e;
     color: white;
     padding: 25px;
@@ -34,6 +37,7 @@ body {
     border-right: 3px solid #ff2e63;
     overflow-y: auto;
 }
+
 
 .sidebar h2 {
     color: #ff2e63;
@@ -71,13 +75,16 @@ body {
 /* ========================= */
 /* 📜 Contenu Principal */
 /* ========================= */
+
 .content {
-    margin-left: 280px;
+    margin-left: clamp(240px, 18vw, 320px); /* 🔁 changé depuis 280px */
+    width: calc(100% - clamp(240px, 18vw, 320px)); /* ✅ ajouté pour éviter le décalage */
     flex-grow: 1;
     padding: 40px;
     overflow-y: auto;
     text-align: center;
 }
+
 
 /* ========================= */
 /* 📌 Sections */
